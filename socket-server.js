@@ -21,7 +21,7 @@ async function translateMessage(text, fromLanguage, toLanguage) {
   try {
     console.log(`🔄 Translating from ${fromLanguage} to ${toLanguage}`)
 
-    const response = await fetch("https://your-vercel-app.vercel.app/api/translate", {
+    const response = await fetch("http://localhost:3000/api/translate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
