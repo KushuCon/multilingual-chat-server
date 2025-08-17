@@ -9,7 +9,7 @@ app.use(cors())
 const server = createServer(app)
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://your-vercel-app.vercel.app"],
+    origin: ["http://localhost:3000", "https://global-chat-omegle-knockoff.vercel.app"],
     methods: ["GET", "POST"],
   },
 })
@@ -21,7 +21,7 @@ async function translateMessage(text, fromLanguage, toLanguage) {
   try {
     console.log(`🔄 Translating from ${fromLanguage} to ${toLanguage}`)
 
-    const response = await fetch("http://localhost:3000/api/translate", {
+    const response = await fetch("https://global-chat-omegle-knockoff.vercel.app/api/translate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
