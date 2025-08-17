@@ -88,8 +88,8 @@ io.on("connection", (socket) => {
             user1Socket.join(roomId)
             user2Socket.join(roomId)
 
-            user1Socket.emit("paired", { roomId, partner: user2 })
-            user2Socket.emit("paired", { roomId, partner: user1 })
+            user1Socket.emit("paired", roomId)
+            user2Socket.emit("paired", roomId)
 
             console.log(`🎯 Paired users: ${user1.username} & ${user2.username} in room ${roomId}`)
           }
