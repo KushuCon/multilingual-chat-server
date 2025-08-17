@@ -1,0 +1,17 @@
+{
+  "name": "socket-server",
+  "version": "1.0.0",
+  "description": "Socket.io server for multilingual chat",
+  "main": "socket-server.js",
+  "scripts": {
+    "start": "node socket-server.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
